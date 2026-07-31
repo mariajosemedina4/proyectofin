@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final - Unidades de Aprendizaje</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 40px 20px;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #7f8c8d;
+        }
+
+        /* Contenedor de las tarjetas en cuadrícula */
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+            max-width: 1000px;
+            width: 100%;
+        }
+
+        /* Diseño de cada tarjeta */
+        .card {
+            background: #ffffff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+            border-top: 5px solid #3498db;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+
+        /* Colores personalizados para cada unidad */
+        .card.u1 { border-top-color: #e74c3c; } /* HTML - Rojo */
+        .card.u2 { border-top-color: #3498db; } /* CSS - Azul */
+        .card.u3 { border-top-color: #f1c40f; } /* JS - Amarillo */
+        .card.u4 { border-top-color: #2ecc71; } /* BD - Verde */
+        .card.u { border-top-color: violet;}
+
+        .card-content {
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+        }
+
+        .card h2 {
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            background-color: #f8f9fa;
+            color: #2c3e50;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            transition: background 0.2s;
+        }
+
+        .card:hover .btn {
+            background-color: #2c3e50;
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>📚 Portafolio de Proyecto Final</h1>
+        <p>Explora cada una de las unidades que conforman este sistema web</p>
+    </header>
+
+    <div class="container">
+        <!-- Unidad 1 -->
+        <a href="Unidad1.html" class="card u1">
+            <div class="card-content">
+                <h2>Unidad 1</h2>
+                <p>Estructura base de la página web utilizando etiquetas semánticas de HTML.</p>
+                <div class="btn">Ver Unidad 1</div>
+            </div>
+        </a>
+
+        <!-- Unidad 2 -->
+        <a href="unidad2.html" class="card u2">
+            <div class="card-content">
+                <h2>Unidad 2</h2>
+                <p>Diseño visual, estilos atractivos, colores y adaptabilidad con CSS.</p>
+                <div class="btn">Ver Unidad 2</div>
+            </div>
+        </a>
+
+        <!-- Unidad 3 -->
+        <a href="unidad3.html" class="card u3">
+            <div class="card-content">
+                <h2>Unidad 3</h2>
+                <p>Interactividad, validaciones y lógica de programación implementada con JavaScript.</p>
+                <div class="btn">Ver Unidad 3</div>
+            </div>
+        </a>
+
+        <!-- Unidad 4 -->
+        <a href="unidad4.html" class="card u4">
+            <div class="card-content">
+                <h2>Unidad 4</h2>
+                <p>Conexión a bases de datos, almacenamiento y gestión dinámica de la información.</p>
+                <div class="btn">Ver Unidad 4</div>
+            </div>
+        </a>
+
+        <a class="card u">
+            <div class="card-content">
+                <h2>Integrantes de Equipo</h2>
+                <p>Hernández Patricio Jaqueline<br>
+                Huerta Diego Dulce Maria<br>
+                Medina Flores Maria Jose<br>
+                Rincon Gutierrez Oliver</p>
+            </div>
+        </a>
+    </div>
+
+</body>
+</html>

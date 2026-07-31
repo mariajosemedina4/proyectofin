@@ -1,0 +1,680 @@
+/*==================================================
+    JavaScript Academy - estilos.css
+==================================================*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    background:#f5f7fb;
+    color:#333;
+    line-height:1.7;
+}
+
+.seccion{
+    padding:90px 0;
+}
+
+.fondo-claro{
+    background:#fff;
+}
+
+h1,h2,h3,h4,h5{
+    font-weight:700;
+}
+
+h2{
+    margin-bottom:20px;
+    color:#1f2937;
+}
+
+p{
+    color:#555;
+}
+
+/*================ NAVBAR ================*/
+
+.navbar{
+    background:#1f2937;
+    transition:.3s;
+    padding:14px 0;
+}
+
+.navbar-brand{
+    color:#F7DF1E !important;
+    font-weight:700;
+    font-size:1.5rem;
+}
+
+.navbar-brand i{
+    margin-right:8px;
+}
+
+.nav-link{
+    color:#fff !important;
+    margin-left:12px;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:#F7DF1E !important;
+}
+
+/*================ HERO ================*/
+
+.hero{
+    padding:150px 0 100px;
+    background:linear-gradient(135deg,#ffffff,#eef2f7);
+}
+
+.hero h1{
+    font-size:3.2rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.1rem;
+}
+
+.btn-warning{
+    background:#F7DF1E;
+    border:none;
+    color:#222;
+    font-weight:600;
+}
+
+.btn-warning:hover{
+    background:#e8cf16;
+}
+
+.editor{
+    width:100%;
+    max-width:520px;
+    margin:auto;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+}
+
+.editor-bar{
+    height:42px;
+    background:#2f3542;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    padding-left:18px;
+}
+
+.editor-bar span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.editor-bar span:nth-child(1){background:#ff5f56;}
+.editor-bar span:nth-child(2){background:#ffbd2e;}
+.editor-bar span:nth-child(3){background:#27c93f;}
+
+.editor-code{
+    background:#1e1e1e;
+    color:#d6f5d6;
+    padding:35px;
+    font-family:Consolas,monospace;
+    min-height:250px;
+}
+
+/*================ ESTADISTICAS ================*/
+
+.estadisticas{
+    background:#fff;
+    padding:70px 0;
+}
+
+.estadisticas h2{
+    color:#F7DF1E;
+    font-size:3rem;
+}
+
+.estadisticas p{
+    margin-top:10px;
+}
+
+/*================ TARJETAS ================*/
+
+.tarjeta,
+.timeline-card,
+.tema,
+.beneficio,
+.dato,
+.evento,
+.lab-card,
+.info-card,
+.tecnologia-card,
+.empresa-card,
+.paso,
+.calculadora,
+.quiz{
+    background:#fff;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.tarjeta:hover,
+.timeline-card:hover,
+.tema:hover,
+.beneficio:hover,
+.dato:hover,
+.evento:hover,
+.lab-card:hover,
+.tecnologia-card:hover,
+.empresa-card:hover,
+.paso:hover{
+    transform:translateY(-6px);
+    box-shadow:0 16px 35px rgba(0,0,0,.12);
+}
+
+.tarjeta i,
+.tema i,
+.beneficio i,
+.evento i,
+.lab-card i,
+.tecnologia-card i,
+.empresa-card i{
+    font-size:3rem;
+    color:#F7DF1E;
+    margin-bottom:18px;
+    display:block;
+}
+
+.timeline-card h3{
+    color:#F7DF1E;
+}
+
+.codigo{
+    background:#1f2937;
+    color:#f8f8f2;
+    padding:25px;
+    border-radius:12px;
+    overflow:auto;
+}
+
+.lista-tema{
+    padding-left:20px;
+}
+
+.proceso{
+    display:flex;
+    gap:18px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.proceso div{
+    background:#F7DF1E;
+    padding:14px 18px;
+    border-radius:10px;
+    font-weight:600;
+}
+
+.proceso span{
+    display:inline-flex;
+    width:28px;
+    height:28px;
+    align-items:center;
+    justify-content:center;
+    border-radius:50%;
+    background:#222;
+    color:#fff;
+    margin-right:8px;
+}
+
+table th{
+    background:#F7DF1E;
+}
+
+.calculadora input{
+    width:100%;
+    margin-bottom:15px;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+.botones-calculadora{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:10px;
+    margin:20px 0;
+}
+
+.botones-calculadora button{
+    padding:14px;
+    border:none;
+    border-radius:8px;
+    background:#F7DF1E;
+    font-weight:700;
+}
+
+footer{
+    background:#1f2937;
+    color:#fff;
+    padding:70px 0 25px;
+}
+
+footer p,
+footer h4,
+footer h5{
+    color:#fff;
+}
+
+footer ul{
+    list-style:none;
+    padding:0;
+}
+
+footer a{
+    color:#ddd;
+    text-decoration:none;
+}
+
+.redes a{
+    font-size:1.4rem;
+    margin-right:15px;
+    color:#F7DF1E;
+}
+
+/*================ RESPONSIVE ================*/
+
+@media(max-width:992px){
+
+.hero{
+    text-align:center;
+}
+
+.hero h1{
+    font-size:2.5rem;
+}
+
+.editor{
+    margin-top:40px;
+}
+
+}
+
+@media(max-width:768px){
+
+.seccion{
+    padding:70px 0;
+}
+
+.hero{
+    padding-top:120px;
+}
+
+.botones-calculadora{
+    grid-template-columns:repeat(2,1fr);
+}
+
+.estadisticas .col-md-3{
+    margin-bottom:30px;
+}
+
+}
+
+
+
+
+/*==================================================
+    PARTE 2 - Componentes y Secciones
+==================================================*/
+
+/* Historia */
+.historia{
+    background:#f8fafc;
+}
+
+.timeline-card{
+    height:100%;
+    border-top:5px solid #F7DF1E;
+}
+
+.timeline-card h5{
+    margin:10px 0;
+    color:#1f2937;
+}
+
+/* Beneficios */
+
+.beneficio{
+    text-align:center;
+}
+
+.beneficio h4{
+    margin:15px 0 10px;
+}
+
+/* Temario */
+
+.tema{
+    height:100%;
+    border-left:5px solid #F7DF1E;
+}
+
+.tema h4{
+    margin:15px 0;
+}
+
+/* Tipos de datos */
+
+.dato{
+    text-align:center;
+}
+
+.dato h4{
+    color:#1f2937;
+}
+
+/* Eventos */
+
+.evento{
+    text-align:center;
+}
+
+.evento h5{
+    margin-top:15px;
+}
+
+/* Laboratorio */
+
+.lab-card{
+    text-align:center;
+}
+
+.lab-card button{
+    margin-top:20px;
+}
+
+/* Quiz */
+
+.quiz{
+    max-width:700px;
+    margin:auto;
+}
+
+.quiz .form-check{
+    margin:15px 0;
+}
+
+/* Comparación */
+
+.tecnologia-card{
+    text-align:center;
+    height:100%;
+}
+
+.tecnologia-card h3{
+    margin:15px 0;
+}
+
+/* Empresas */
+
+.empresa-card{
+    text-align:center;
+    height:100%;
+}
+
+.empresa-card h4{
+    margin:15px 0;
+}
+
+/* Ruta */
+
+.paso{
+    text-align:center;
+}
+
+.paso h3{
+    width:60px;
+    height:60px;
+    margin:0 auto 15px;
+    border-radius:50%;
+    background:#F7DF1E;
+    color:#222;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* FAQ */
+
+.accordion-button:not(.collapsed){
+    background:#F7DF1E;
+    color:#222;
+}
+
+.accordion-button:focus{
+    box-shadow:none;
+}
+
+/* Formularios */
+
+.form-control{
+    border-radius:10px;
+    padding:12px;
+}
+
+.form-control:focus{
+    border-color:#F7DF1E;
+    box-shadow:0 0 0 .2rem rgba(247,223,30,.25);
+}
+
+/* Animaciones */
+
+.timeline-card,
+.tema,
+.beneficio,
+.lab-card,
+.empresa-card,
+.tecnologia-card,
+.evento,
+.dato,
+.paso{
+    animation:aparecer .6s ease;
+}
+
+@keyframes aparecer{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+
+
+
+/*==================================================
+    PARTE 3 - Footer, detalles y responsive final
+==================================================*/
+
+html{
+    scroll-padding-top:80px;
+}
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+section:nth-child(even){
+    position:relative;
+}
+
+.btn{
+    transition:.3s ease;
+}
+
+.btn:hover{
+    transform:translateY(-2px);
+}
+
+table{
+    border-radius:12px;
+    overflow:hidden;
+}
+
+.table td,
+.table th{
+    vertical-align:middle;
+}
+
+#resultado{
+    color:#d97706;
+    font-weight:700;
+}
+
+.redes{
+    margin-top:15px;
+}
+
+.redes a{
+    transition:.3s;
+}
+
+.redes a:hover{
+    color:#fff;
+    transform:translateY(-3px);
+}
+
+footer hr{
+    border-color:rgba(255,255,255,.15);
+    margin:35px 0 20px;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#ececec;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#F7DF1E;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#d8bf12;
+}
+
+@media (max-width:576px){
+
+.hero h1{
+    font-size:2rem;
+}
+
+.hero p{
+    font-size:1rem;
+}
+
+h2{
+    font-size:1.8rem;
+}
+
+.editor-code{
+    padding:20px;
+    font-size:.9rem;
+}
+
+.proceso{
+    flex-direction:column;
+}
+
+.timeline-card,
+.tema,
+.beneficio,
+.lab-card,
+.empresa-card,
+.tecnologia-card,
+.dato,
+.evento{
+    margin-bottom:20px;
+}
+
+.calculadora{
+    padding:20px;
+}
+
+footer{
+    text-align:center;
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+}
+
+}
+
+@media (min-width:1200px){
+
+.container{
+    max-width:1180px;
+}
+
+}
+
+/* Fin del archivo */
+
+
+/*=========================================
+            MENÚ TEMAS
+==========================================*/
+
+.dropdown-menu{
+
+    border:none;
+
+    border-radius:15px;
+
+    padding:10px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.dropdown-item{
+
+    border-radius:10px;
+
+    transition:.3s;
+
+    padding:10px 15px;
+
+    font-weight:500;
+
+}
+
+.dropdown-item:hover{
+
+    background:#f7df1e;
+
+    color:#000;
+
+    transform:translateX(6px);
+
+}

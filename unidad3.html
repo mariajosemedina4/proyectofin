@@ -1,0 +1,2401 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript Academy</title>
+
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Iconos -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+
+
+    <!--====================================================
+                    NAVBAR
+=====================================================-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+
+        <div class="container">
+
+            <a class="navbar-brand" href="#inicio">
+
+                <i class="fa-brands fa-js"></i>
+
+                JavaScript Academy
+
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#inicio">
+
+                            Inicio
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#quees">
+
+                            ¿Qué es?
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#historia">
+
+                            Historia
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#temario">
+
+                            Temario
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#laboratorio">
+
+                            Laboratorio
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#calculadora">
+
+                            Calculadora
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#quiz">
+
+                            Quiz
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+
+
+
+    <!--====================================================
+                    HERO
+=====================================================-->
+
+    <section class="hero" id="inicio">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1>
+
+                        Aprende JavaScript
+
+                        desde Cero
+
+                    </h1>
+
+                    <p>
+
+                        JavaScript es el lenguaje que hace posible que una página web cobre vida.
+
+                        En este sitio aprenderás desde los conceptos básicos hasta ejemplos interactivos,
+
+                        de una manera sencilla y práctica.
+
+                    </p>
+
+                    <div class="mt-4">
+
+                        <a href="#quees" class="btn btn-warning btn-lg">
+
+                            Comenzar
+
+                        </a>
+
+                        <a href="#temario" class="btn btn-outline-dark btn-lg ms-2">
+
+                            Ver Temario
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <div class="editor">
+
+                        <div class="editor-bar">
+
+                            <span></span>
+
+                            <span></span>
+
+                            <span></span>
+
+                        </div>
+
+                        <div class="editor-code">
+
+                            &lt;script&gt;
+
+                            <br><br>
+
+                            let nombre = "JavaScript";
+
+                            <br><br>
+
+                            console.log(nombre);
+
+                            <br><br>
+
+                            &lt;/script&gt;
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--====================================================
+                ESTADÍSTICAS
+=====================================================-->
+
+    <section class="estadisticas">
+
+        <div class="container">
+
+            <div class="row text-center">
+
+                <div class="col-md-3">
+
+                    <h2>1995</h2>
+
+                    <p>Año de creación</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h2>95%</h2>
+
+                    <p>De los sitios web utilizan JavaScript</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h2>3</h2>
+
+                    <p>Tecnologías principales del Front-End</p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h2>∞</h2>
+
+                    <p>Posibilidades para desarrollar</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!--====================================================
+                ¿QUÉ ES JAVASCRIPT?
+=====================================================-->
+
+    <section class="container seccion" id="quees">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <h2>
+
+                    ¿Qué es JavaScript?
+
+                </h2>
+
+                <p>
+
+                    JavaScript es un lenguaje de programación interpretado que permite agregar
+
+                    interactividad a las páginas web. Gracias a él es posible crear botones,
+
+                    formularios dinámicos, animaciones, juegos, validaciones, calculadoras,
+
+                    aplicaciones web completas y mucho más.
+
+                </p>
+
+                <p>
+
+                    Actualmente es uno de los lenguajes más utilizados del mundo y forma parte
+
+                    fundamental del desarrollo Front-End junto con HTML y CSS.
+
+                </p>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="tarjeta">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <h3>
+
+                        ¿Por qué aprender JavaScript?
+
+                    </h3>
+
+                    <ul>
+
+                        <li>✔ Es fácil comenzar.</li>
+
+                        <li>✔ Tiene mucha demanda laboral.</li>
+
+                        <li>✔ Funciona en todos los navegadores.</li>
+
+                        <li>✔ Permite crear sitios dinámicos.</li>
+
+                        <li>✔ También puede usarse en el servidor con Node.js.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--====================================================
+                    HISTORIA
+=====================================================-->
+
+    <section class="historia seccion" id="historia">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>Historia de JavaScript</h2>
+
+                <p>
+                    JavaScript nació para hacer que las páginas web dejaran de ser
+                    estáticas. Con el paso de los años evolucionó hasta convertirse
+                    en uno de los lenguajes de programación más importantes del mundo.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="timeline-card">
+
+                        <h3>1995</h3>
+
+                        <h5>Creación</h5>
+
+                        <p>
+
+                            Brendan Eich desarrolló JavaScript en solo 10 días
+                            mientras trabajaba para Netscape.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="timeline-card">
+
+                        <h3>1997</h3>
+
+                        <h5>ECMAScript</h5>
+
+                        <p>
+
+                            JavaScript se convirtió en un estándar internacional
+                            bajo el nombre de ECMAScript.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="timeline-card">
+
+                        <h3>2009</h3>
+
+                        <h5>Node.js</h5>
+
+                        <p>
+
+                            Aparece Node.js, permitiendo ejecutar JavaScript
+                            fuera del navegador.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="timeline-card">
+
+                        <h3>Actualidad</h3>
+
+                        <h5>Lenguaje líder</h5>
+
+                        <p>
+
+                            Hoy JavaScript se utiliza para crear sitios web,
+                            aplicaciones móviles, videojuegos y servidores.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                ¿CÓMO FUNCIONA?
+=====================================================-->
+
+    <section class="container seccion">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" class="img-fluid" alt="JavaScript">
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h2>
+
+                    ¿Cómo funciona JavaScript?
+
+                </h2>
+
+                <p>
+
+                    Cuando una página web se carga en el navegador,
+                    HTML crea la estructura, CSS agrega el diseño
+                    y JavaScript se encarga del comportamiento.
+
+                </p>
+
+                <p>
+
+                    Gracias a JavaScript podemos detectar clics,
+                    modificar texto, cambiar imágenes,
+                    realizar cálculos y comunicarnos con servidores
+                    sin recargar la página.
+
+                </p>
+
+                <div class="proceso">
+
+                    <div>
+
+                        <span>1</span>
+
+                        HTML
+
+                    </div>
+
+                    <div>
+
+                        <span>2</span>
+
+                        CSS
+
+                    </div>
+
+                    <div>
+
+                        <span>3</span>
+
+                        JavaScript
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+            ¿POR QUÉ APRENDER JAVASCRIPT?
+=====================================================-->
+
+    <section class="beneficios seccion">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>
+
+                    ¿Por qué aprender JavaScript?
+
+                </h2>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="beneficio">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <h4>
+
+                            Desarrollo Web
+
+                        </h4>
+
+                        <p>
+
+                            Permite crear páginas modernas e interactivas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="beneficio">
+
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+
+                        <h4>
+
+                            Aplicaciones
+
+                        </h4>
+
+                        <p>
+
+                            También se utiliza para desarrollar aplicaciones móviles.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="beneficio">
+
+                        <i class="fa-solid fa-briefcase"></i>
+
+                        <h4>
+
+                            Empleo
+
+                        </h4>
+
+                        <p>
+
+                            Es uno de los lenguajes más solicitados por las empresas.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    TEMARIO
+=====================================================-->
+
+    <section class="container seccion" id="temario">
+
+        <div class="text-center mb-5">
+
+            <h2>
+
+                Temario
+
+            </h2>
+
+            <p>
+
+                Estos son algunos de los temas principales que aprenderás.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-code"></i>
+
+                    <h4>Variables</h4>
+
+                    <p>
+
+                        Aprende a guardar información utilizando
+                        <strong>let</strong>,
+                        <strong>const</strong>
+                        y
+                        <strong>var</strong>.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-database"></i>
+
+                    <h4>
+
+                        Tipos de datos
+
+                    </h4>
+
+                    <p>
+
+                        Conoce números, cadenas, booleanos,
+                        arreglos, objetos y valores especiales.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-calculator"></i>
+
+                    <h4>
+
+                        Operadores
+
+                    </h4>
+
+                    <p>
+
+                        Aprende operadores aritméticos,
+                        lógicos,
+                        relacionales
+                        y de asignación.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-code-branch"></i>
+
+                    <h4>
+
+                        Condicionales
+
+                    </h4>
+
+                    <p>
+
+                        Utiliza
+                        if,
+                        else,
+                        else if
+                        y
+                        switch.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-repeat"></i>
+
+                    <h4>
+
+                        Ciclos
+
+                    </h4>
+
+                    <p>
+
+                        Aprende
+                        for,
+                        while,
+                        do while
+                        y
+                        for of.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tema">
+
+                    <i class="fa-solid fa-gears"></i>
+
+                    <h4>
+
+                        Funciones
+
+                    </h4>
+
+                    <p>
+
+                        Organiza tu código creando funciones reutilizables.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!--====================================================
+                    VARIABLES
+=====================================================-->
+
+    <section class="container seccion" id="variables">
+
+        <div class="text-center mb-5">
+
+            <h2>Variables</h2>
+
+            <p>
+                Las variables permiten almacenar información para utilizarla
+                posteriormente en un programa.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <pre class="codigo">
+let nombre = "María";
+
+const edad = 20;
+
+var ciudad = "Monterrey";
+
+console.log(nombre);
+</pre>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h4>Tipos de declaración</h4>
+
+                <ul class="lista-tema">
+
+                    <li><strong>let</strong> → puede cambiar su valor.</li>
+
+                    <li><strong>const</strong> → su valor permanece constante.</li>
+
+                    <li><strong>var</strong> → forma antigua de declarar variables.</li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                TIPOS DE DATOS
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="tipos">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>Tipos de datos</h2>
+
+                <p>
+
+                    JavaScript puede trabajar con distintos tipos de información.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>String</h4>
+
+                        <p>"Hola Mundo"</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>Number</h4>
+
+                        <p>25</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>Boolean</h4>
+
+                        <p>true / false</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>Array</h4>
+
+                        <p>["HTML","CSS","JS"]</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>Object</h4>
+
+                        <p>{ nombre:"Ana" }</p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-4">
+
+                    <div class="dato">
+
+                        <h4>Null</h4>
+
+                        <p>null</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                OPERADORES
+=====================================================-->
+
+    <section class="container seccion" id="operadores">
+
+        <div class="text-center mb-5">
+
+            <h2>
+
+                Operadores
+
+            </h2>
+
+        </div>
+
+        <div class="table-responsive">
+
+            <table class="table table-bordered table-hover">
+
+                <thead>
+
+                    <tr>
+
+                        <th>Operador</th>
+
+                        <th>Ejemplo</th>
+
+                        <th>Resultado</th>
+
+                    </tr>
+
+                </thead>
+
+                <tbody>
+
+                    <tr>
+
+                        <td>+</td>
+
+                        <td>5 + 2</td>
+
+                        <td>7</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>-</td>
+
+                        <td>10 - 3</td>
+
+                        <td>7</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>*</td>
+
+                        <td>4 * 5</td>
+
+                        <td>20</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>/</td>
+
+                        <td>20 / 4</td>
+
+                        <td>5</td>
+
+                    </tr>
+
+                    <tr>
+
+                        <td>%</td>
+
+                        <td>10 % 3</td>
+
+                        <td>1</td>
+
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+            CONDICIONALES
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="condicionales">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h2>
+
+                        Condicionales
+
+                    </h2>
+
+                    <p>
+
+                        Permiten tomar decisiones dependiendo si una condición
+                        es verdadera o falsa.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <pre class="codigo">
+let edad = 18;
+
+if(edad >= 18){
+
+console.log("Mayor de edad");
+
+}else{
+
+console.log("Menor de edad");
+
+}
+</pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    CICLOS
+=====================================================-->
+
+    <section class="container seccion" id="ciclos">
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <pre class="codigo">
+for(let i=1;i<=5;i++){
+
+console.log(i);
+
+}
+</pre>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <h2>
+
+                    Ciclos
+
+                </h2>
+
+                <p>
+
+                    Los ciclos permiten repetir instrucciones
+                    sin escribir el mismo código varias veces.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                FUNCIONES
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="funciones">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>
+
+                    Funciones
+
+                </h2>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <p>
+
+                        Una función agrupa instrucciones para reutilizarlas
+                        cuando sea necesario.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <pre class="codigo">
+function saludar(){
+
+alert("Hola");
+
+}
+
+saludar();
+</pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                ARREGLOS
+=====================================================-->
+
+    <section class="container seccion" id="arreglos">
+
+        <div class="text-center mb-5">
+
+            <h2>
+
+                Arreglos
+
+            </h2>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-6">
+
+                <pre class="codigo">
+let colores=[
+
+"Rojo",
+
+"Azul",
+
+"Verde"
+
+];
+</pre>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <p>
+
+                    Los arreglos almacenan varios valores dentro
+                    de una sola variable.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    OBJETOS
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="objetos">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-lg-6">
+
+                    <h2>
+
+                        Objetos
+
+                    </h2>
+
+                    <p>
+
+                        Los objetos permiten guardar información mediante
+                        propiedades y valores.
+
+                    </p>
+
+                </div>
+
+                <div class="col-lg-6">
+
+                    <pre class="codigo">
+let alumno={
+
+nombre:"Ana",
+
+edad:20,
+
+carrera:"ISC"
+
+};
+</pre>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!--====================================================
+                        DOM
+=====================================================-->
+
+    <section class="container seccion" id="dom">
+
+        <div class="text-center mb-5">
+
+            <h2>Manipulación del DOM</h2>
+
+            <p>
+                El DOM (Document Object Model) representa todos los elementos de una
+                página web. JavaScript puede acceder a ellos para modificar texto,
+                imágenes, estilos y mucho más.
+            </p>
+
+        </div>
+
+        <div class="row align-items-center">
+
+            <div class="col-lg-6">
+
+                <pre class="codigo">
+const titulo =
+document.getElementById("titulo");
+
+titulo.innerHTML =
+"Hola JavaScript";
+</pre>
+
+            </div>
+
+            <div class="col-lg-6">
+
+                <div class="info-card">
+
+                    <h4>¿Qué puede hacer el DOM?</h4>
+
+                    <ul class="lista-tema">
+
+                        <li>Cambiar texto.</li>
+
+                        <li>Modificar estilos.</li>
+
+                        <li>Agregar elementos.</li>
+
+                        <li>Eliminar elementos.</li>
+
+                        <li>Responder a eventos.</li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    EVENTOS
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="eventos">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>
+
+                    Eventos
+
+                </h2>
+
+                <p>
+
+                    Los eventos permiten ejecutar acciones cuando el usuario
+                    interactúa con la página.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="evento">
+
+                        <i class="fa-solid fa-computer-mouse"></i>
+
+                        <h5>click</h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="evento">
+
+                        <i class="fa-solid fa-keyboard"></i>
+
+                        <h5>keydown</h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="evento">
+
+                        <i class="fa-solid fa-hand-pointer"></i>
+
+                        <h5>mouseover</h5>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="evento">
+
+                        <i class="fa-solid fa-window-maximize"></i>
+
+                        <h5>load</h5>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                LABORATORIO
+=====================================================-->
+
+    <section class="container seccion" id="laboratorio">
+
+        <div class="text-center mb-5">
+
+            <h2>
+
+                Laboratorio JavaScript
+
+            </h2>
+
+            <p>
+
+                En esta sección podrás probar pequeños ejemplos
+                interactivos desarrollados con JavaScript.
+
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+
+                <div class="lab-card">
+
+                    <i class="fa-solid fa-lightbulb"></i>
+
+                    <h4>Encender foco</h4>
+
+                    <button class="btn btn-warning">
+
+                        Probar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="lab-card">
+
+                    <i class="fa-solid fa-dice"></i>
+
+                    <h4>Número aleatorio</h4>
+
+                    <button class="btn btn-warning">
+
+                        Generar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+
+                <div class="lab-card">
+
+                    <i class="fa-solid fa-clock"></i>
+
+                    <h4>Reloj digital</h4>
+
+                    <button class="btn btn-warning">
+
+                        Iniciar
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                CALCULADORA
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="calculadora">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>
+
+                    Calculadora
+
+                </h2>
+
+                <p>
+
+                    Realiza operaciones básicas utilizando JavaScript.
+
+                </p>
+
+            </div>
+
+            <div class="calculadora">
+
+                <input type="number" id="num1" placeholder="Número 1">
+
+                <input type="number" id="num2" placeholder="Número 2">
+
+                <div class="botones-calculadora">
+
+                    <button id="sumar">
+
+                        +
+
+                    </button>
+
+                    <button id="restar">
+
+                        -
+
+                    </button>
+
+                    <button id="multiplicar">
+
+                        ×
+
+                    </button>
+
+                    <button id="dividir">
+
+                        ÷
+
+                    </button>
+
+                </div>
+
+                <h3>
+
+                    Resultado:
+
+                    <span id="resultado">
+
+                        0
+
+                    </span>
+
+                </h3>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    QUIZ
+=====================================================-->
+
+    <section class="container seccion" id="quiz">
+
+        <div class="text-center mb-5">
+
+            <h2>Quiz de JavaScript</h2>
+
+            <p>
+                Responde las siguientes preguntas para comprobar tus conocimientos.
+            </p>
+
+        </div>
+
+        <div class="quiz">
+
+            <!-- Pregunta 1 -->
+
+            <div class="pregunta">
+
+                <h4>1. ¿Quién creó JavaScript?</h4>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p1" value="0">
+                    <label class="form-check-label">Bill Gates</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p1" value="1">
+                    <label class="form-check-label">Brendan Eich</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p1" value="0">
+                    <label class="form-check-label">Linus Torvalds</label>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Pregunta 2 -->
+
+            <div class="pregunta">
+
+                <h4>2. ¿Qué tipo de variable permite cambiar su valor?</h4>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p2" value="1">
+                    <label class="form-check-label">let</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p2" value="0">
+                    <label class="form-check-label">const</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p2" value="0">
+                    <label class="form-check-label">var</label>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Pregunta 3 -->
+
+            <div class="pregunta">
+
+                <h4>3. ¿Qué función se utiliza para mostrar información en la consola?</h4>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" value="0">
+                    <label class="form-check-label">alert()</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" value="1">
+                    <label class="form-check-label">console.log()</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p3" value="0">
+                    <label class="form-check-label">print()</label>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Pregunta 4 -->
+
+            <div class="pregunta">
+
+                <h4>4. selecciona la respuesta correcta</h4>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" value="0">
+                    <label class="form-check-label">HTML crea la estructura, JavaScript agrega diseño y CSS se encarga
+                        del comportamiento</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" value="1">
+                    <label class="form-check-label">HTML crea la estructura, CSS agrega el diseño y JavaScript se
+                        encarga del comportamiento</label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p4" value="0">
+                    <label class="form-check-label">JavaScript crea la estructura, CSS agrega el diseño y HTML se
+                        encarga del comportamiento</label>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <!-- Pregunta 5 -->
+
+            <div class="pregunta">
+
+                <h4>5. Permite ejecutar JavaScript fuera del navegador</h4>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" value="1">
+                    <label class="form-check-label">
+                        Node.js
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" value="0">
+                    <label class="form-check-label">
+                        document.query()
+                    </label>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="p5" value="0">
+                    <label class="form-check-label">
+                        ECMAScript
+                    </label>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5">
+
+                <button class="btn btn-warning btn-lg" id="btnQuiz">
+                    Ver resultado
+                </button>
+
+            </div>
+
+            <div class="alert alert-info mt-4 text-center" id="resultadoQuiz" style="display:none;">
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                COMENTARIOS
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="comentarios">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>
+
+                    Déjanos tu comentario
+
+                </h2>
+
+            </div>
+
+            <form action="php/guardar_comentario.php" method="POST">
+
+                <div class="row">
+
+                    <div class="col-md-6 mb-3">
+
+                        <input type="text" name="nombre" class="form-control" placeholder="Nombre" required>
+
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+
+                        <input type="email" name="correo" class="form-control" placeholder="Correo electrónico"
+                            required>
+
+                    </div>
+
+                    <div class="col-12 mb-3">
+
+                        <textarea name="comentario" class="form-control" rows="6" placeholder="Escribe tu comentario..."
+                            required></textarea>
+
+                    </div>
+
+                    <div class="col-12 text-center">
+
+                        <button class="btn btn-warning btn-lg" type="submit">
+
+                            Enviar comentario
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </form>
+            <div class="mt-5">
+
+                <h3 class="text-center mb-4">
+
+                    Comentarios publicados
+
+                </h3>
+
+                <?php
+
+        include("php/mostrar_comentarios.php");
+
+    ?>
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!--====================================================
+            HTML - CSS - JAVASCRIPT
+=====================================================-->
+
+    <section class="container seccion" id="comparacion">
+
+        <div class="text-center mb-5">
+
+            <h2>Las tres tecnologías principales del Desarrollo Web</h2>
+
+            <p>
+                Para crear una página web moderna se utilizan tres tecnologías que trabajan en conjunto.
+            </p>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4">
+
+                <div class="tecnologia-card">
+
+                    <i class="fa-brands fa-html5"></i>
+
+                    <h3>HTML</h3>
+
+                    <p>
+
+                        Es el lenguaje encargado de crear la estructura de una página web.
+                        Define títulos, párrafos, imágenes, tablas, formularios y todos
+                        los elementos que aparecen en pantalla.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tecnologia-card">
+
+                    <i class="fa-brands fa-css3-alt"></i>
+
+                    <h3>CSS</h3>
+
+                    <p>
+
+                        Se utiliza para diseñar la apariencia del sitio web.
+                        Permite cambiar colores, tamaños, posiciones,
+                        animaciones y adaptar la página a diferentes dispositivos.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="col-lg-4">
+
+                <div class="tecnologia-card">
+
+                    <i class="fa-brands fa-js"></i>
+
+                    <h3>JavaScript</h3>
+
+                    <p>
+
+                        Agrega la interactividad.
+                        Hace posible crear calculadoras,
+                        formularios dinámicos,
+                        juegos,
+                        validaciones,
+                        menús,
+                        animaciones y aplicaciones completas.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+            APLICACIONES REALES
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="aplicaciones">
+
+        <div class="container">
+
+            <div class="text-center mb-5">
+
+                <h2>¿Dónde se utiliza JavaScript?</h2>
+
+                <p>
+
+                    Actualmente millones de aplicaciones utilizan JavaScript
+                    como parte de su funcionamiento.
+
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+
+                <div class="col-md-3">
+
+                    <div class="empresa-card">
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                        <h4>YouTube</h4>
+
+                        <p>
+
+                            Reproduce videos,
+                            comentarios,
+                            búsquedas y recomendaciones.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="empresa-card">
+
+                        <i class="fa-brands fa-facebook"></i>
+
+                        <h4>Facebook</h4>
+
+                        <p>
+
+                            Actualiza publicaciones sin recargar la página.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="empresa-card">
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                        <h4>Instagram</h4>
+
+                        <p>
+
+                            Gestiona historias,
+                            reacciones,
+                            mensajes y notificaciones.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <div class="empresa-card">
+
+                        <i class="fa-brands fa-discord"></i>
+
+                        <h4>Discord</h4>
+
+                        <p>
+
+                            Permite comunicación en tiempo real mediante eventos.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                RUTA DE APRENDIZAJE
+=====================================================-->
+
+    <section class="container seccion" id="ruta">
+
+        <div class="text-center mb-5">
+
+            <h2>Ruta recomendada para aprender JavaScript</h2>
+
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>1</h3>
+
+                    <p>Variables</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>2</h3>
+
+                    <p>Tipos de datos</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>3</h3>
+
+                    <p>Condicionales</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>4</h3>
+
+                    <p>Ciclos</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>5</h3>
+
+                    <p>Funciones</p>
+
+                </div>
+
+            </div>
+
+            <div class="col-md-2">
+
+                <div class="paso">
+
+                    <h3>6</h3>
+
+                    <p>DOM</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--====================================================
+                    FAQ
+=====================================================-->
+
+    <section class="seccion fondo-claro" id="faq">
+
+        <div class="container">
+
+            <h2 class="text-center mb-5">
+
+                Preguntas Frecuentes
+
+            </h2>
+
+            <div class="accordion" id="faq">
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#p1">
+
+                            ¿Es difícil aprender JavaScript?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="p1" class="accordion-collapse collapse show" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            No. Con práctica constante cualquier persona puede aprenderlo.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#p2">
+
+                            ¿Necesito saber HTML y CSS?
+
+                        </button>
+
+                    </h2>
+
+                    <div id="p2" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            Sí. Son la base del desarrollo web y complementan a JavaScript.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="accordion-item">
+
+                    <h2 class="accordion-header">
+
+                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#p3">
+
+                            ¿JavaScript sirve solo para páginas web?
+
+                        </button>
+
+                    </h2>
+
+                    <div style="text-align:center; margin-top:40px;">
+                        <a href="index.html"
+                            style="display:inline-block; background:#2b3a67; color:white; text-decoration:none; padding:14px 28px; border-radius:8px; font-weight:bold;">
+                            Regresar a la página principal
+                        </a>
+                    </div>
+
+                    <div id="p3" class="accordion-collapse collapse" data-bs-parent="#faq">
+
+                        <div class="accordion-body">
+
+                            No. También se utiliza para desarrollar aplicaciones móviles,
+                            servidores, videojuegos y aplicaciones de escritorio.
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!--====================================================
+                    FOOTER
+=====================================================-->
+
+    <footer>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <h4>
+
+                        JavaScript Academy
+
+                    </h4>
+
+                    <p>
+
+                        Proyecto educativo desarrollado con HTML, CSS,
+                        JavaScript, PHP y MySQL para aprender los
+                        fundamentos del lenguaje JavaScript.
+
+                    </p>
+
+                </div>
+
+                <div class="col-md-3">
+
+                    <h5>
+
+                        Enlaces
+
+                    </h5>
+
+                    <ul>
+
+                        <li><a href="#inicio">Inicio</a></li>
+
+                        <li><a href="#quees">¿Qué es?</a></li>
+
+                        <li><a href="#temario">Temario</a></li>
+
+                        <li><a href="#laboratorio">Laboratorio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="menuTemas" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                Temas
+
+                            </a>
+
+                            <ul class="dropdown-menu">
+
+                                <li><a class="dropdown-item" href="#quees">¿Qué es JavaScript?</a></li>
+
+                                <li><a class="dropdown-item" href="#historia">Historia</a></li>
+
+                                <li><a class="dropdown-item" href="#funciona">¿Cómo funciona?</a></li>
+
+                                <li><a class="dropdown-item" href="#variables">Variables</a></li>
+
+                                <li><a class="dropdown-item" href="#tipos">Tipos de datos</a></li>
+
+                                <li><a class="dropdown-item" href="#operadores">Operadores</a></li>
+
+                                <li><a class="dropdown-item" href="#condicionales">Condicionales</a></li>
+
+                                <li><a class="dropdown-item" href="#ciclos">Ciclos</a></li>
+
+                                <li><a class="dropdown-item" href="#funciones">Funciones</a></li>
+
+                                <li><a class="dropdown-item" href="#arreglos">Arreglos</a></li>
+
+                                <li><a class="dropdown-item" href="#objetos">Objetos</a></li>
+
+                                <li><a class="dropdown-item" href="#dom">DOM</a></li>
+
+                                <li><a class="dropdown-item" href="#aplicaciones">Aplicaciones</a></li>
+
+                                <li><a class="dropdown-item" href="#comparacion">HTML - CSS - JavaScript</a></li>
+
+                                <li><a class="dropdown-item" href="#ruta">Ruta de aprendizaje</a></li>
+
+                                <li><a class="dropdown-item" href="#faq">Preguntas frecuentes</a></li>
+
+                                <li><a class="dropdown-item" href="#calculadora">Calculadora</a></li>
+
+                                <li><a class="dropdown-item" href="#quiz">Quiz</a></li>
+
+                                <li><a class="dropdown-item" href="#comentarios">Comentarios</a></li>
+
+                            </ul>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+
+
+                <div class="col-md-3">
+
+                    <h5>
+
+                        Síguenos
+
+                    </h5>
+
+                    <div class="redes">
+
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fab fa-github"></i></a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr>
+
+            <p class="text-center">
+
+                © 2026 JavaScript Academy | Todos los derechos reservados.
+
+            </p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="js/script.js?v=3"></script>
+
+
+
+</body>
+
+</html>

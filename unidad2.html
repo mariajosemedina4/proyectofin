@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Unidad 2 - CSS</title>
+
+<style>
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#222;
+    margin:20px;
+    background:#f3f6fb;
+}
+
+h1{
+    text-align:center;
+    color:#2b3a67;
+}
+
+h2{
+    border-bottom:3px solid #ccc;
+    padding:6px 10px;
+    margin-top:45px;
+    border-radius:4px;
+}
+
+h3{
+    margin-top:20px;
+    color:#444;
+}
+
+p{
+    line-height:1.5;
+}
+
+table{
+    border-collapse:collapse;
+    margin:10px 0;
+}
+
+table, th, td{
+    border:1px solid #666;
+}
+
+th{
+    background:#2b3a67;
+    color:white;
+}
+
+th, td{
+    padding:8px 12px;
+}
+
+.menu{
+    border:1px solid #999;
+    padding:15px;
+    margin-bottom:20px;
+    background:#2b3a67;
+}
+
+.menu a{
+    margin-right:12px;
+    color:white;
+    text-decoration:none;
+    background:rgba(255,255,255,0.15);
+    padding:5px 10px;
+    border-radius:5px;
+}
+
+.menu a:hover{
+    background:rgba(255,255,255,0.3);
+}
+
+.caja{
+    border:1px solid #999;
+    padding:10px;
+    margin:10px 0;
+    display:inline-block;
+}
+
+.demo{
+    border:1px solid #aaa;
+    padding:10px;
+    margin:10px 0;
+}
+
+code{
+    background:#eee;
+    padding:1px 5px;
+}
+
+</style>
+</head>
+
+<body>
+
+<h1 id="inicio">Unidad 2 - CSS</h1>
+
+<div class="menu">
+<a href="#queescss">Qué es CSS</a>
+<a href="#atributos">Atributos</a>
+<a href="#estilos">Atributo style</a>
+<a href="#colores">Colores</a>
+<a href="#texto">Formato de texto</a>
+<a href="#imagenes">Imágenes</a>
+<a href="#listas">Listas</a>
+<a href="#tablas">Tablas</a>
+<a href="#ejemplos">Ejemplos</a>
+</div>
+
+<!-- QUE ES CSS -->
+<h2 id="queescss" style="background:#e6f7f5; border-bottom-color:#1b998b; color:#1b998b;">1. Qué es CSS</h2>
+<p>
+CSS (Cascading Style Sheets, Hojas de Estilo en Cascada) sirve para controlar
+la apariencia de una página: color, fuente, tamaño del texto, espacio entre
+elementos, cómo se acomodan en la pantalla, fondos, y hasta cómo se ve en
+distintos tamaños de pantalla. Se llama "en cascada" porque el estilo que se
+le aplica a un elemento padre también se aplica a sus elementos hijos, a
+menos que se indique algo diferente.
+</p>
+
+<h3>Formas de usar CSS</h3>
+<ul>
+<li><b>En línea (inline):</b> con el atributo <code>style</code> dentro de la etiqueta.</li>
+<li><b>Interno (internal):</b> con la etiqueta <code>&lt;style&gt;</code> dentro del <code>&lt;head&gt;</code>.</li>
+<li><b>Externo (external):</b> con <code>&lt;link&gt;</code> apuntando a un archivo .css aparte.</li>
+</ul>
+
+<h3>Border, padding y margin</h3>
+<p>
+<code>border</code> pone un borde alrededor del elemento, <code>padding</code>
+es el espacio entre el contenido y el borde, y <code>margin</code> es el
+espacio que separa al elemento de los demás elementos de la página.
+</p>
+<p class="demo" style="border:2px solid darkmagenta; padding:15px; margin:15px;">
+Este párrafo tiene border, padding y margin aplicados para que se note la diferencia.
+</p>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- ATRIBUTOS -->
+<h2 id="atributos" style="background:#fff2e6; border-bottom-color:#ff7f11; color:#d9660b;">2. Atributos</h2>
+<p>
+Los atributos dan información adicional sobre una etiqueta. Se ponen dentro
+del tag de apertura y casi siempre vienen en pares nombre="valor".
+</p>
+<ul>
+<li><b>src:</b> indica la ruta de una imagen o archivo.</li>
+<li><b>href:</b> indica a dónde lleva un enlace.</li>
+<li><b>alt:</b> texto alternativo que se muestra si la imagen no carga.</li>
+<li><b>width / height:</b> ancho y alto de un elemento.</li>
+<li><b>style:</b> agrega estilo directo al elemento (color, fuente, tamaño, etc.).</li>
+</ul>
+<p>
+En el atributo <code>src</code> de una imagen se puede usar una URL absoluta
+(la dirección completa de una imagen que está en otro sitio) o una URL
+relativa (la ruta del archivo dentro del mismo proyecto, sin el dominio).
+</p>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- ATRIBUTO STYLE -->
+<h2 id="estilos" style="background:#e8f1fb; border-bottom-color:#2e86ab; color:#2e86ab;">3. El atributo style</h2>
+<p>
+El atributo <code>style</code> se usa para dar formato a un elemento
+específico: color de texto, color de fondo, tipografía, tamaño y
+alineación.
+</p>
+
+<p class="demo" style="color:red;">color:red;</p>
+<p class="demo" style="background-color:powderblue;">background-color:powderblue;</p>
+<p class="demo" style="font-family:verdana;">font-family:verdana;</p>
+<p class="demo" style="font-size:160%;">font-size:160%;</p>
+<p class="demo" style="text-align:center;">text-align:center;</p>
+<p class="demo" style="text-align:right;">text-align:right;</p>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- COLORES -->
+<h2 id="colores" style="background:#fdeaec; border-bottom-color:#d7263d; color:#d7263d;">4. Colores</h2>
+<p>
+En CSS los colores se pueden escribir de varias formas: por nombre, en RGB,
+en hexadecimal (HEX), en HSL, y sus versiones con transparencia RGBA y HSLA.
+</p>
+
+<table>
+<tr><th>Formato</th><th>Ejemplo</th><th>Resultado</th></tr>
+<tr><td>Nombre</td><td><code>Tomato</code></td><td><span class="caja" style="background:Tomato; color:white;">Tomato</span></td></tr>
+<tr><td>RGB</td><td><code>rgb(255,99,71)</code></td><td><span class="caja" style="background:rgb(255,99,71); color:white;">rgb</span></td></tr>
+<tr><td>HEX</td><td><code>#ff6347</code></td><td><span class="caja" style="background:#ff6347; color:white;">hex</span></td></tr>
+<tr><td>HSL</td><td><code>hsl(9,100%,64%)</code></td><td><span class="caja" style="background:hsl(9,100%,64%); color:white;">hsl</span></td></tr>
+<tr><td>RGBA</td><td><code>rgba(255,99,71,0.5)</code></td><td><span class="caja" style="background:rgba(255,99,71,0.5);">rgba</span></td></tr>
+<tr><td>HSLA</td><td><code>hsla(9,100%,64%,0.5)</code></td><td><span class="caja" style="background:hsla(9,100%,64%,0.5);">hsla</span></td></tr>
+</table>
+
+<p>
+En <b>RGB</b>, cada valor de rojo, verde y azul va de 0 a 255. (255,0,0) es
+rojo puro, (0,0,0) es negro y (255,255,255) es blanco. Cuando los tres
+valores son iguales se obtiene una tonalidad de gris.
+</p>
+<p>
+En <b>HSL</b> el primer número es el matiz (0 a 360, un grado en la rueda de
+color), el segundo es la saturación (0% sin color, 100% color puro) y el
+tercero es la luz (0% negro, 100% blanco).
+</p>
+<p>
+<b>RGBA</b> y <b>HSLA</b> agregan un cuarto valor, el canal alpha, que va de
+0 (transparente) a 1 (sin transparencia).
+</p>
+
+<p>El color también se puede aplicar al texto o al borde:</p>
+<p class="demo" style="color:DodgerBlue;">color:DodgerBlue;</p>
+<p class="demo" style="border:2px solid Violet;">border:2px solid Violet;</p>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- FORMATO DE TEXTO -->
+<h2 id="texto" style="background:#f2e9fb; border-bottom-color:#7b2cbf; color:#7b2cbf;">5. Formato de texto</h2>
+<table>
+<tr><th>Etiqueta</th><th>Uso</th><th>Ejemplo</th></tr>
+<tr><td><code>&lt;b&gt;</code></td><td>Negrita sin importancia extra</td><td><b>texto en negrita</b></td></tr>
+<tr><td><code>&lt;strong&gt;</code></td><td>Texto con importancia</td><td><strong>texto importante</strong></td></tr>
+<tr><td><code>&lt;i&gt;</code></td><td>Cursiva, voz alterna</td><td><i>texto en cursiva</i></td></tr>
+<tr><td><code>&lt;em&gt;</code></td><td>Texto con énfasis</td><td><em>texto enfatizado</em></td></tr>
+<tr><td><code>&lt;small&gt;</code></td><td>Texto más pequeño</td><td><small>texto pequeño</small></td></tr>
+<tr><td><code>&lt;mark&gt;</code></td><td>Texto resaltado</td><td><mark>texto resaltado</mark></td></tr>
+<tr><td><code>&lt;del&gt;</code></td><td>Texto borrado</td><td><del>texto borrado</del></td></tr>
+<tr><td><code>&lt;ins&gt;</code></td><td>Texto insertado</td><td><ins>texto insertado</ins></td></tr>
+<tr><td><code>&lt;sub&gt;</code></td><td>Subíndice</td><td>H<sub>2</sub>O</td></tr>
+<tr><td><code>&lt;sup&gt;</code></td><td>Superíndice</td><td>4X<sup>3</sup></td></tr>
+</table>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- IMAGENES -->
+<h2 id="imagenes" style="background:#eaf7e6; border-bottom-color:#3a9d23; color:#2f7d1c;">6. Imágenes</h2>
+<p>
+La etiqueta <code>img</code> no inserta la imagen dentro del HTML, solo la
+enlaza: crea un espacio donde se mostrará la imagen. Es una etiqueta vacía
+(no tiene cierre) y necesita al menos <code>src</code> y <code>alt</code>.
+</p>
+<ul>
+<li><b>width / height:</b> tamaño de la imagen, ya sea como atributo o dentro de <code>style</code>.</li>
+<li><b>float:</b> hace que el texto rodee la imagen, a la izquierda o a la derecha.</li>
+<li><b>background-image:</b> pone una imagen como fondo de cualquier elemento, incluyendo el <code>body</code>.</li>
+<li><b>Imagen como link:</b> se logra poniendo la etiqueta <code>img</code> dentro de una etiqueta <code>a</code>.</li>
+<li><b>map / area:</b> crean un mapa de imagen, donde distintas zonas de una misma imagen son enlaces diferentes.</li>
+</ul>
+<p>
+Como ejemplo visual (sin usar una imagen real), así se ve un elemento con
+<code>background-image</code> simulado con un color de fondo:
+</p>
+<div class="demo" style="background:#cfe8f3; height:80px; width:220px;">simulación de background-image</div>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- LISTAS -->
+<h2 id="listas" style="background:#fbf3e0; border-bottom-color:#c99a2e; color:#a97e1f;">7. Listas</h2>
+
+<h3>Lista desordenada (ul)</h3>
+<p>Cada elemento se marca con <code>li</code>. Con <code>list-style-type</code> se cambia el marcador.</p>
+<ul>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+<ul style="list-style-type:square;">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ul>
+
+<h3>Lista ordenada (ol)</h3>
+<p>Se numera por default. El atributo <code>type</code> cambia el marcador: 1 números, A mayúsculas, a minúsculas, I romanos, i romanos minúscula.</p>
+<ol>
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+<ol type="i">
+<li>Coffee</li>
+<li>Tea</li>
+<li>Milk</li>
+</ol>
+
+<h3>Lista descriptiva (dl)</h3>
+<p><code>dt</code> es el término y <code>dd</code> su descripción.</p>
+<dl>
+<dt>Coffee</dt>
+<dd>- bebida caliente y oscura</dd>
+<dt>Milk</dt>
+<dd>- bebida blanca y fría</dd>
+</dl>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- TABLAS -->
+<h2 id="tablas" style="background:#fbe6e8; border-bottom-color:#c1121f; color:#c1121f;">8. Tablas</h2>
+<p>
+Las tablas organizan datos en filas y columnas. <code>tr</code> es una fila,
+<code>td</code> es una celda de datos y <code>th</code> es una celda de
+encabezado.
+</p>
+
+<table>
+<tr>
+<th>Firstname</th>
+<th>Lastname</th>
+<th>Age</th>
+</tr>
+<tr>
+<td>Jill</td>
+<td>Smith</td>
+<td>50</td>
+</tr>
+<tr>
+<td>Eve</td>
+<td>Jackson</td>
+<td>94</td>
+</tr>
+</table>
+
+<h3>Bordes en tablas</h3>
+<p>
+Con <code>border</code> se agregan bordes a la tabla, <code>th</code> y
+<code>td</code>. Con <code>border-collapse:collapse</code> se evita el doble
+borde entre celdas. Con <code>border-style</code> se cambia su forma
+(dotted, dashed, solid, double, groove, ridge, inset, outset). Con
+<code>border-radius</code> se redondean las esquinas y con
+<code>border-color</code> se le da color al borde.
+</p>
+<table style="border-collapse:collapse;">
+<tr><th style="border:2px solid red; border-style:groove; border-radius:8px;">Ejemplo</th></tr>
+<tr><td style="border:2px solid red; border-style:groove; border-radius:8px;">Celda con borde groove y radius</td></tr>
+</table>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<!-- EJEMPLOS -->
+<h2 id="ejemplos" style="background:#e6ecf9; border-bottom-color:#023e8a; color:#023e8a;">9. Ejemplos</h2>
+<p>
+Aquí se combina lo visto en la unidad: colores, tipografía, bordes, listas
+y tablas, todo en un mismo elemento.
+</p>
+
+<h3>Ejemplo 1 - Tarjeta de presentación</h3>
+<div class="demo" style="background:hsl(200,70%,95%); border:3px solid #2e86ab; border-radius:10px; padding:20px; max-width:320px;">
+<h3 style="margin-top:0; color:#023e8a;">Alan Turing</h3>
+<p style="font-family:verdana; font-size:90%;">Matemático y científico de la computación.</p>
+<p><mark>Pionero</mark> de la inteligencia artificial y padre de la computación moderna.</p>
+</div>
+
+<h3>Ejemplo 2 - Botón con estados de color</h3>
+<p>Un mismo elemento con distintos colores según su estado, usando RGBA para variar la opacidad:</p>
+<p>
+<span class="caja" style="background:rgba(46,134,171,1); color:white;">Normal</span>
+<span class="caja" style="background:rgba(46,134,171,0.6); color:white;">Deshabilitado</span>
+<span class="caja" style="background:rgba(46,134,171,0.3); color:#023e8a;">Fantasma</span>
+</p>
+
+<h3>Ejemplo 3 - Menú de comida (listas + tabla juntas)</h3>
+<div style="display:flex; gap:20px; flex-wrap:wrap;">
+<div class="demo" style="background:#fff8ee;">
+<b>Bebidas</b>
+<ul style="list-style-type:square;">
+<li>Café</li>
+<li>Té</li>
+<li>Chocolate</li>
+</ul>
+</div>
+<table>
+<tr><th>Platillo</th><th>Precio</th></tr>
+<tr><td>Tacos</td><td>$35</td></tr>
+<tr><td>Quesadilla</td><td>$28</td></tr>
+</table>
+</div>
+
+<div class="volver"><a href="#inicio">Volver al inicio</a></div>
+
+<div style="text-align:center; margin-top:40px;">
+<a href="princiapal.html" style="display:inline-block; background:#2b3a67; color:white; text-decoration:none; padding:14px 28px; border-radius:8px; font-weight:bold;">
+Regresar a la página principal
+</a>
+</div>
+
+</body>
+</html>
